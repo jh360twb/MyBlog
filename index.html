@@ -13,14 +13,15 @@
     <div class="ui container">
         <div class="ui inverted secondary menu">
             <h2 class="ui teal header item">Tian's Blog</h2>
-            <a href="a" class="item"><i class="home icon"></i>首页</a>
-            <a href="a" class="item"><i class="idea icon"></i>分类</a>
-            <a href="a" class="item"><i class="tags icon"></i>标签</a>
-            <a href="a" class="item"><i class="info icon"></i>关于我</a>
+            <a href="#" class="item"><i class="home icon"></i>首页</a>
+            <a href="#" class="item"><i class="idea icon"></i>分类</a>
+            <a href="#" class="item"><i class="tags icon"></i>标签</a>
+            <a href="#" class="item"><i class="info icon"></i>关于我</a>
+            <!--            在右侧-->
             <div class="right item">
-                <div class="ui input">
+                <div class="ui icon inverted input">
                     <input type="text" placeholder="Search...">
-                    <i class="search icon"></i>
+                    <i class="search link icon"></i>
                 </div>
             </div>
         </div>
@@ -28,11 +29,87 @@
 </nav>
 
 <!--中间内容-->
-<div>
+<div class="m-padded-tb-large">
+    <!--    响应式效果,根据屏幕变化大小-->
+    <div class="ui container">
+        <div class="ui grid">
+            <div class="eleven wide column">
+                <div class="ui segment">
+                    <!--                    两列-->
+                    <div class="ui middle aligned two column grid">
+                        <div class="column">
+                            <h3 class="ui teal header">博客</h3>
+                        </div>
+                        <div class="right aligned column">
+                            共  <h2 class="ui orange header m-inline-block m-text-thin">14</h2>  篇
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="five wide column">
+                <div class="ui segment">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 </div>
 
 <!--底部-->
-<footer>
+<footer class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <!--        一共分16份-->
+        <div class="ui inverted divided grid">
+            <!--            图片-->
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="./static/images/myinfo.png" class="ui rounded image" alt="" style="width: 110px">
+                    </div>
+                </div>
+            </div>
+            <!--            最新博客-->
+            <div class="four wide column">
+                <h4 class="ui inverted header">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">火焰猫的故事</a>
+                    <a href="#" class="item">火焰猫的故事</a>
+                    <a href="#" class="item">火焰猫的故事</a>
+                </div>
+            </div>
+
+            <div class="four wide column">
+                <h4 class="ui inverted header">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Email: 873044564@qq.com</a>
+                    <a href="#" class="item">Tel: 18571580469</a>
+                    <a href="#" class="item">Nick: 火焰猫的故事</a>
+                </div>
+            </div>
+            <!--            简介-->
+            <div class="five wide column">
+                <h4 class="ui inverted header">博客简介</h4>
+                <p class="m-opacity-mini m-text-spaced m-text-thin">这是我的个人博客 , 希望每个到达这里的人都可以学到新知识 !</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-opacity-mini m-text-spaced m-text-thin">Copyright ©2021 Tian Designed By Tian</p>
+    </div>
 
 </footer>
 
