@@ -39,6 +39,11 @@
 }
 
 /*字体*/
+.m-text {
+    font-weight: 300 !important;
+    letter-spacing: 1px !important;
+    line-height: 1.8;
+}
 
 /*字体宽度*/
 .m-text-thin {
@@ -61,6 +66,11 @@
 }
 
 /*display*/
-.m-inline-block{
+.m-inline-block {
     display: inline-block !important;
+}
+
+.m-container {
+    max-width: 90em !important;
+    margin: auto !important;
 }
