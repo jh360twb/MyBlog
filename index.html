@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>博客园</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-    <link rel="stylesheet" href="static/css/me.css">
+    <link rel="stylesheet" href="./static/css/me.css">
 </head>
 <body>
 <!--导航-->
 <nav class="ui inverted attached segment m-padded-tb-mini">
     <div class="ui container">
-        <div class="ui inverted secondary menu">
+        <!--      适应手机 stackable  -->
+        <div class="ui inverted secondary stackable menu">
             <h2 class="ui teal header item">博客园</h2>
-            <a href="#" class="item"><i class="home icon"></i>首页</a>
-            <a href="#" class="item"><i class="idea icon"></i>分类</a>
-            <a href="#" class="item"><i class="tags icon"></i>标签</a>
-            <a href="#" class="item"><i class="info icon"></i>关于我</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="clone  icon"></i>归档</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
             <!--            在右侧-->
-            <div class="right item">
+            <div class="right m-item item m-mobile-hide">
                 <div class="ui icon inverted input">
                     <input type="text" placeholder="快速搜索...">
                     <i class="search link icon"></i>
@@ -26,13 +28,16 @@
             </div>
         </div>
     </div>
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
 </nav>
 
 <!--中间内容-->
 <div class="m-container m-padded-tb-large">
     <!--    响应式效果,根据屏幕变化大小-->
     <div class="ui container">
-        <div class="ui grid">
+        <div class="ui stackable grid">
             <!--            左边文章显示区域-->
             <div class="eleven wide column">
                 <!--                header-->
@@ -52,7 +57,7 @@
                 <div class="ui attached  segment">
                     <!--                    one of list-->
                     <div class="ui padded vertical segment m-padded-tb-large">
-                        <div class="ui grid">
+                        <div class="ui mobile reversed stackable grid">
                             <!--                            文章内容-->
                             <div class="ui eleven wide column">
                                 <h3 class="ui header">如何才能成为一名好的开发者?</h3>
@@ -94,7 +99,7 @@
                         </div>
                     </div>
                     <div class="ui padded vertical segment m-padded-tb-large">
-                        <div class="ui grid">
+                        <div class="ui mobile reversed stackable grid">
                             <!--                            文章内容-->
                             <div class="ui eleven wide column">
                                 <h3 class="ui header">如何才能成为一名好的开发者?</h3>
@@ -136,7 +141,7 @@
                         </div>
                     </div>
                     <div class="ui padded vertical segment m-padded-tb-large">
-                        <div class="ui grid">
+                        <div class="ui mobile reversed stackable grid">
                             <!--                            文章内容-->
                             <div class="ui eleven wide column">
                                 <h3 class="ui header">如何才能成为一名好的开发者?</h3>
@@ -178,7 +183,7 @@
                         </div>
                     </div>
                     <div class="ui padded vertical segment m-padded-tb-large">
-                        <div class="ui grid">
+                        <div class="ui mobile reversed stackable grid">
                             <!--                            文章内容-->
                             <div class="ui eleven wide column">
                                 <h3 class="ui header">如何才能成为一名好的开发者?</h3>
@@ -333,20 +338,25 @@
                         <i class="bookmark icon"></i>最新推荐
                     </div>
                     <div class="ui teal segment">
-                        <a href="#" class="item">
+                        <a href="#" class="item m-text-color">
                             火焰猫的故事
                         </a>
                     </div>
                     <div class="ui  segment">
-                        <a href="#" class="item">
+                        <a href="#" class="item m-text-color">
                             火焰猫的故事
                         </a>
                     </div>
                     <div class="ui  segment">
-                        <a href="#" class="item">
+                        <a href="#" class="item m-text-color">
                             火焰猫的故事
                         </a>
                     </div>
+                </div>
+                <!--                二维码-->
+                <h4 class="ui horizontal divider header">扫码关注我</h4>
+                <div class="ui  centered card" style="width: 120px">
+                    <img src="./static/images/myinfo.png" alt="" class="ui  rounded image">
                 </div>
             </div>
         </div>
@@ -357,7 +367,7 @@
 <footer class="ui inverted vertical segment m-padded-tb-massive">
     <div class="ui center aligned container">
         <!--        一共分16份-->
-        <div class="ui inverted divided grid">
+        <div class="ui stackable inverted divided grid">
             <!--            图片-->
             <div class="three wide column">
                 <div class="ui inverted link list">
@@ -398,5 +408,11 @@
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script>
+<!--    点击事件-->
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+</script>
 </body>
 </html>

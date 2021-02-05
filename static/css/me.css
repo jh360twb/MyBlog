@@ -1,3 +1,7 @@
+body{
+    background: url("../images/bg.png");
+}
+
 .m-padded-tb-mini {
     padding-top: 0.2em !important;
     padding-bottom: 0.2em !important;
@@ -50,9 +54,15 @@
     line-height: 1.8;
 }
 
+.m-right-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 /*字体颜色*/
 .m-text-color {
-   color: #333 !important;
+    color: #333 !important;
 }
 
 /*字体宽度*/
@@ -80,7 +90,22 @@
     display: inline-block !important;
 }
 
+/*container的限制*/
 .m-container {
     max-width: 90em !important;
     margin: auto !important;
+}
+
+/*判断是否为手机端*/
+.m-mobile-show {
+    display: none !important;
+}
+
+@media screen  and (max-width: 768px) {
+    .m-mobile-show {
+        display: block !important;
+    }
+    .m-mobile-hide {
+        display: none !important;
+    }
 }
