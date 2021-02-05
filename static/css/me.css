@@ -38,11 +38,21 @@
     padding-bottom: 5em !important;
 }
 
+.m-margin-tb-tiny {
+    margin-top: 0.3em !important;
+    margin-bottom: 0.3em !important;
+}
+
 /*字体*/
 .m-text {
     font-weight: 300 !important;
     letter-spacing: 1px !important;
     line-height: 1.8;
+}
+
+/*字体颜色*/
+.m-text-color {
+   color: #333 !important;
 }
 
 /*字体宽度*/
