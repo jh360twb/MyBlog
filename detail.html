@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>博客园</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="./static/css/me.css">
+</head>
+<body>
+<!--导航-->
+<nav class="ui inverted attached segment m-padded-tb-mini">
+    <div class="ui container">
+        <!--      适应手机 stackable  -->
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui teal header item">博客园</h2>
+            <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="clone  icon"></i>归档</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+            <!--            在右侧-->
+            <div class="right m-item item m-mobile-hide">
+                <div class="ui icon inverted input">
+                    <input type="text" placeholder="快速搜索...">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+<!--中间内容-->
+<div class="m-container-small m-padded-tb-large">
+    <!--    响应式效果,根据屏幕变化大小,比较好适应移动端-->
+    <div class="ui container">
+        <div class="ui top attached segment">
+            <div class="ui grid">
+                <!--                    左侧内容-->
+                <div class="eleven wide column">
+                    <!--            个人简介-->
+                    <div class="ui horizontal link list">
+                        <!--                                            头像/名字-->
+                        <div class="item">
+                            <img src="https://picsum.photos/id/10/100/100" alt=""
+                                 class="ui avatar image">
+                            <div class="content">
+                                <div class="header">田文彪</div>
+                            </div>
+                        </div>
+                        <!--                                            时间-->
+                        <div class="item">
+                            <i class="calendar icon"></i>2021-02-04
+                        </div>
+                        <!--                                            阅读量-->
+                        <div class="item">
+                            <i class="eye icon"></i> 2345
+                        </div>
+                    </div>
+                </div>
+                <!--                是否原创-->
+                <div class="right aligned five wide column">
+                    <div class="ui orange basic label">原创</div>
+                </div>
+            </div>
+        </div>
+        <!--        图片区域-->
+        <div class="ui attached segment">
+            <img src="https://picsum.photos/id/10/800/400" alt="" class="ui fluid rounded image">
+        </div>
+        <div class="ui attached padded segment">
+            <!--            内容-->
+            <h2 class="ui center aligned header">火焰猫的故事</h2>
+            <div id="content" class="m-margin-tb-3em m-padded-tb-large">
+                <p>火焰猫 燐（かえんびょう りん，Kaenbyou Rin）是系列作品《东方Project》中的角色，于《东方地灵殿》首次登场。</p>
+            </div>
+            <!--            标签-->
+            <div class="m-margin-tb-3em">
+                <div class="ui basic teal label">
+                    方法论
+                </div>
+            </div>
+            <!--            赞赏-->
+            <div class="ui center aligned basic segment">
+                <button id="payBt" class="ui red basic circular button">赞赏¥</button>
+            </div>
+            <!--            popup弹窗-->
+            <div class="ui  payQR flowing popup transition hidden">
+                <div class="ui images" style="font-size: inherit !important;">
+                    <div class="image">
+                        <img src="./static/images/myinfo.png" alt="" class="ui rounded bordered image"
+                             style="width: 120px">
+                        <div>支付宝</div>
+                    </div>
+                    <div class="image">
+                        <img src="./static/images/myinfo.png" alt="" class="ui rounded bordered image"
+                             style="width: 120px">
+                        <div>微信</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="ui attached positive message">
+            <!--            博客信息-->
+            <div class="ui grid">
+                <div class="eleven wide column">
+
+                </div>
+                <div class="five wide column">
+                    <img src="./static/images/myinfo.png" alt="" class="ui right floated rounded bordered image"
+                         style="width: 110px">
+                </div>
+            </div>
+        </div>
+        <div class="ui bottom attached segment">
+            <!--            留言区域-->
+        </div>
+    </div>
+</div>
+
+<!--底部-->
+<footer class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <!--        一共分16份-->
+        <div class="ui stackable inverted divided grid">
+            <!--            图片-->
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="./static/images/myinfo.png" class="ui right floated rounded image" alt=""
+                             style="width: 110px">
+                    </div>
+                </div>
+            </div>
+            <!--            最新博客-->
+            <div class="four wide column">
+                <h4 class="ui inverted header">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">火焰猫的故事</a>
+                    <a href="#" class="item">火焰猫的故事</a>
+                    <a href="#" class="item">火焰猫的故事</a>
+                </div>
+            </div>
+
+            <div class="four wide column">
+                <h4 class="ui inverted header">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Email: 873044564@qq.com</a>
+                    <a href="#" class="item">Tel: 18571580469</a>
+                    <a href="#" class="item">Nick: 火焰猫的故事</a>
+                </div>
+            </div>
+            <!--            简介-->
+            <div class="five wide column">
+                <h4 class="ui inverted header">博客简介</h4>
+                <p class="m-opacity-mini m-text-spaced m-text-thin">这是我的个人博客 , 希望每个到达这里的人都可以学到新知识 !</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-opacity-mini m-text-spaced m-text-thin">Copyright ©2021 Tian Designed By Tian</p>
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script>
+    <!--    点击事件-->
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+    $('#payBt').popup({
+        popup: $('.payQR.popup'),
+        on: 'click',
+        position: 'bottom center'
+    });
+</script>
+</body>
+</html>

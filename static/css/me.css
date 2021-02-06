@@ -47,6 +47,16 @@ body{
     margin-bottom: 0.3em !important;
 }
 
+.m-margin-tb-3em {
+    margin-left: 3em !important;
+    margin-right: 3em !important;
+}
+
+.m-margin-tb-5em {
+    margin-left: 5em !important;
+    margin-right: 5em !important;
+}
+
 /*字体*/
 .m-text {
     font-weight: 300 !important;
@@ -94,6 +104,19 @@ body{
 .m-container {
     max-width: 90em !important;
     margin: auto !important;
+}
+
+.m-container-small {
+    max-width: 60em !important;
+    margin: auto !important;
+}
+
+.m-container-lr{
+    max-width: 90em !important;
+}
+
+.m-container-tb{
+    max-height: 40px !important;
 }
 
 /*判断是否为手机端*/
